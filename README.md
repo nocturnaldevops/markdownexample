@@ -1,28 +1,13 @@
-# H1
-## H2
-### H3
-#### H4
-##### H5
-###### H6
+# Linux Command Guide
 
+This document provides a quick reference to basic Linux commands and instructions for managing system settings and shell interpreters.
 
+## Change Hostname
 
-Markdown is a lightweight markup language used to format text. It is widely used for writing content that can be easily converted to HTML, such as in documentation, wikis, and blog posts. Here's a summary of common Markdown syntax elements:
+To change the hostname of your server, use the following commands:
 
-1. Headings
-Markdown allows you to create headers by using the # symbol. The number of # symbols corresponds to the level of the heading.
-
-markdown
-Copy code
-# H1
-## H2
-### H3
-#### H4
-##### H5
-###### H6
-2. Bold Text
-To make text bold, wrap it in double asterisks (**) or double underscores (__).
-
-markdown
-Copy code
-**Bold text** or __Bold text__
+```bash
+sudo hostnamectl set-hostname <your_hostname>
+exec bash
+echo $SHELL
+cat /etc/shells
